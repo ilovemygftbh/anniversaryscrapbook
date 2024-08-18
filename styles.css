@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Indie Flower', cursive;
     background-color: #f8e6e8; /* Light pastel pink */
     color: #330000; /* Deep cherry red */
     margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Pacifico', cursive;
     color: #ff3366; /* Vibrant pinkish-red */
     font-size: 3em;
     text-align: center;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sacramento', cursive;
     color: #cc0033; /* Deep cherry red */
     font-size: 1.5em;
     text-align: center;
@@ -63,7 +63,7 @@ h2 {
 }
 
 .text-block h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Pacifico', cursive;
     color: #ff3366; /* Vibrant pinkish-red */
     margin-bottom: 10px;
 }
@@ -81,7 +81,7 @@ footer {
 }
 
 footer p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Great Vibes', cursive;
     color: #cc0033; /* Deep cherry red */
     margin: 0;
 }
