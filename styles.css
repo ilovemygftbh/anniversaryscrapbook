@@ -1,26 +1,87 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #590D22;
-    color: #FFCCD5;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8e6e8; /* Light pastel pink */
+    color: #330000; /* Deep cherry red */
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
-    color: #6E1423;
-}
-
-a {
-    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    color: #ff3366; /* Vibrant pinkish-red */
+    font-size: 3em;
+    text-align: center;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #FFCCD5;
-    color: red;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
-a:hover {
-    background-color: #6F1D1B;
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #cc0033; /* Deep cherry red */
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container for layout */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffe6e6; /* Baby pink */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff6699; /* Lighter pink border */
+}
+
+/* Text Block */
+.text-block {
+    text-align: left;
+    max-width: 50%;
+}
+
+.text-block h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ff3366; /* Vibrant pinkish-red */
+    margin-bottom: 10px;
+}
+
+.text-block p {
+    color: #cc0033; /* Deep cherry red */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fce4ec; /* Very light pink */
+    border-top: 2px solid #ff3366; /* Vibrant pinkish-red border */
+}
+
+footer p {
+    font-family: 'Playfair Display', serif;
+    color: #cc0033; /* Deep cherry red */
+    margin: 0;
 }
