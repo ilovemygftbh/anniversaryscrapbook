@@ -85,3 +85,35 @@ footer p {
     color: #cc0033; /* Deep cherry red */
     margin: 0;
 }
+/* Heart Button */
+.heart-button {
+    display: inline-block;
+    font-size: 2em;  /* Adjust size as needed */
+    color: #ff3366; /* Cherry red */
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #ff6699; /* Light pink border */
+    border-radius: 50%;  /* Circular shape */
+    background-color: #ffe6e6; /* Light pastel pink background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Add a hover effect */
+.heart-button:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow */
+}
+
+/* Optional: pulsating animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.heart-button:hover {
+    animation: pulse 1s infinite;
+}
