@@ -1,5 +1,46 @@
-<div class="book-cover">
-    <a href="#" id="openBook">
-        <img src="book-cover.png" alt="Scrapbook Cover">
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Scrapbook</title>
+    <!-- Link to your scrapbook CSS -->
+    <link rel="stylesheet" href="scrapbook.css">
+    <!-- Include turn.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+</head>
+<body>
+
+    <!-- Book Cover -->
+    <div class="book-cover">
+        <a href="#" id="openBook">
+            <img src="book-cover.png" alt="Scrapbook Cover">
+        </a>
+    </div>
+
+    <!-- Scrapbook Pages -->
+    <div id="scrapbook">
+        <div class="page"><h2>Page 1</h2><p>Your content here</p></div>
+        <div class="page"><h2>Page 2</h2><p>Your content here</p></div>
+        <!-- Add more pages as needed -->
+    </div>
+
+    <!-- JavaScript to handle the book opening and page flipping -->
+    <script>
+        // Open the book and reveal the pages
+        document.getElementById("openBook").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.querySelector(".book-cover").style.display = "none"; // Hide the cover
+            document.getElementById("scrapbook").style.display = "block"; // Show the pages
+
+            // Initialize turn.js on the scrapbook
+            $("#scrapbook").turn({
+                width: 600,
+                height: 400,
+                autoCenter: true
+            });
+        });
+    </script>
+
+</body>
+</html>
